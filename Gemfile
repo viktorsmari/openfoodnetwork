@@ -12,7 +12,7 @@ gem 'awesome_nested_set'
 gem 'ransack', '2.4.1'
 gem 'responders'
 gem 'sass', '~> 3.4.0' # this restriction originates from foundation-rails's version
-gem 'sass-rails', '< 6.0.0'
+gem 'sass-rails', '< 5.1.0' # this restriction originates from the compass-rails's version
 
 gem 'i18n'
 gem 'i18n-js', '~> 3.8.2'
@@ -94,7 +94,7 @@ gem 'whenever', require: false
 gem 'test-unit', '~> 3.4'
 
 gem 'coffee-rails', '~> 5.0.0'
-gem 'compass-rails'
+gem 'compass-rails', '~> 3.0'
 
 gem 'mini_racer', '0.4.0'
 

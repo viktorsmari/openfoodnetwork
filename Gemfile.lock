@@ -171,12 +171,22 @@ GEM
     coffee-script-source (1.12.2)
     combine_pdf (1.0.21)
       ruby-rc4 (>= 0.1.5)
-    compass (0.12.2)
+    compass (1.0.3)
       chunky_png (~> 1.2)
-      fssm (>= 0.2.7)
-      sass (~> 3.1)
-    compass-rails (2.0.0)
-      compass (>= 0.12.2)
+      compass-core (~> 1.0.2)
+      compass-import-once (~> 1.0.5)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+      sass (>= 3.3.13, < 3.5)
+    compass-core (1.0.3)
+      multi_json (~> 1.0)
+      sass (>= 3.3.0, < 3.5)
+    compass-import-once (1.0.5)
+      sass (>= 3.2, < 3.5)
+    compass-rails (3.1.0)
+      compass (~> 1.0.0)
+      sass-rails (< 5.1)
+      sprockets (< 4.0)
     concurrent-ruby (1.1.8)
     crack (0.4.5)
       rexml
@@ -271,7 +281,6 @@ GEM
     foundation-rails (5.5.2.1)
       railties (>= 3.1.0)
       sass (>= 3.3.0, < 3.5)
-    fssm (0.2.10)
     fuubar (2.5.1)
       rspec-core (~> 3.0)
       ruby-progressbar (~> 1.4)
@@ -525,7 +534,7 @@ GEM
     ruby2_keywords (0.0.4)
     rubyzip (2.3.0)
     sass (3.4.25)
-    sass-rails (5.1.0)
+    sass-rails (5.0.8)
       railties (>= 5.2.0)
       sass (~> 3.1)
       sprockets (>= 2.8, < 4.0)
@@ -649,7 +658,7 @@ DEPENDENCIES
   codecov
   coffee-rails (~> 5.0.0)
   combine_pdf
-  compass-rails
+  compass-rails (~> 3.0)
   custom_error_message!
   daemons
   dalli
@@ -721,7 +730,7 @@ DEPENDENCIES
   rubocop
   rubocop-rails
   sass (~> 3.4.0)
-  sass-rails (< 6.0.0)
+  sass-rails (< 5.1.0)
   select2-rails (~> 3.5.11)
   selenium-webdriver
   shoulda-matchers
